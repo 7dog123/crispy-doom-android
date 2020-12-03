@@ -1,0 +1,18 @@
+[submodule "app/src/main/cpp/SDL2_mixer"]
+	path = app/src/main/cpp/SDL2_mixer
+	url = https://github.com/SDL-mirror/SDL_mixer
+[submodule "app/src/main/cpp/SDL2_net"]
+	path = app/src/main/cpp/SDL2_net
+	url = https://github.com/SDL-mirror/SDL_net
+[submodule "app/src/main/cpp/SDL2"]
+	path = app/src/main/cpp/SDL2
+	url = https://github.com/SDL-mirror/SDL
+[submodule "app/src/main/cpp/crispy-doom"]
+	path = app/src/main/cpp/crispy-doom
+	url = https://github.com/Velaron/crispy-doom
+[submodule "app/src/main/cpp/samplerate"]
+	path = app/src/main/cpp/samplerate
+	url = https://github.com/Velaron/libsamplerate
+[submodule "app/src/main/cpp/png"]
+	path = app/src/main/cpp/png
+	url = https://github.com/Velaron/libpng

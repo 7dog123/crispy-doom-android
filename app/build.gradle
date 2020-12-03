@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+	compileSdkVersion 28
+	ndkVersion '21.3.6528147'
+
+	defaultConfig {
+		applicationId "pp.bodis.crispydoom"
+		minSdkVersion 28
+		targetSdkVersion 28
+
+		externalNativeBuild {
+			ndkBuild {
+				arguments "V=1"
+			}
+		}
+	}
+
+	buildTypes {
+		debug {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+		}
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+		}
+	}
+
+	externalNativeBuild {
+		ndkBuild {
+			path file('src/main/cpp/Android.mk')
+		}
+	}
+}
+
+dependencies {
+	implementation "androidx.appcompat:appcompat:1.2.0"
+}
